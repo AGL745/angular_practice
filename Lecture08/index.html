@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="angular.min.js"></script>
+  <script src="app.js"></script>
+  <style> body {font-size: 1.2em; } </style>
+  <title> HTML Shell </title>
+</head>
+<body ng-app='MsgApp'>
+  <h1>Think</h1>
+  <div ng-controller='MsgController'>
+    Message is: <br />
+    {{name}} <br />
+    {{sayMessage()}}
+    <br />
+    {{sayLovesMessage()}}
+    <br />
+    <div>
+      <button ng-click="feedAllan()"> Feed Allan </button>
+
+      {{cost | currency}}
+      <br />
+      <br />
+      <img ng-src="images/cookie_{{stateOfBeing}}.jpeg" />
+    </div>
+  </div>
+</body>
+</html>
